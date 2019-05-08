@@ -1,0 +1,21 @@
+{
+  "name": "akashchandra",
+  "version": "0.1.0",
+  "description": "A gorgeous blog/portfolio static website about Fintech, Data Science.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akashgurava/akashchandra.git"
+  },
+  "keywords": [
+    "blog",
+    "fintech",
+    "data",
+    "akashchandra"
+  ],
+  "author": "Akash Chandra Gurava <akash.chandra@live.com> (https://akashchandra.me)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/akashgurava/akashchandra/issues"
+  },
+  "homepage": "https://github.com/akashgurava/akashchandra"
+}
