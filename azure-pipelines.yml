@@ -8,11 +8,8 @@ pool:
 trigger:
   branches:
     include:
-      - '*'
-    exclude:
-      - dependabot/*
-      - depfu/*
-      - bug-fix/*
+      - master
+      - dev
 
 steps:
   - task: NodeTool@0
@@ -24,5 +21,3 @@ steps:
     displayName: "npm install"
     inputs:
       verbose: false
-
-  
