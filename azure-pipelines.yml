@@ -36,7 +36,6 @@ steps:
     displayName: "Deploy the website"
     inputs:
       script:
-        firebase use default
-        echo "$FIRBASE_TOKEN"
+        echo "$FIREBASE_TOKEN"
 
         firebase deploy --token "$FIREBASE_TOKEN"
