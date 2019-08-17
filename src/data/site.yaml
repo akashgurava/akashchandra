@@ -1,0 +1,16 @@
+fonts:
+    logo: "Karla"
+    menu: "Karla"
+menu:
+    home:
+        name: Home
+        link: "/"
+    projects:
+        name: Projects
+        link: "/#projects"
+    blog:
+        name: Blog
+        link: "/blog"
+    resume:
+        name: Resume
+        link: "/resume"

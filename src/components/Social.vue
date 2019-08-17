@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { social } from "@/data/about.yaml";
+import { social } from "@/data/user.yaml";
 
 export default {
     data() {

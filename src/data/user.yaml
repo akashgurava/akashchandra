@@ -1,6 +1,6 @@
 details:
     name: "Akash Chandra Gurava"
-    logo_name: "akashchandra"
+    logo_name: "akash"
 social:
     linkedin:
         fas_name: "linkedin"
@@ -25,4 +25,3 @@ projects:
         start: "Aug-2019"
         end: "Sept-2019"
         description: "Ipsum"
-

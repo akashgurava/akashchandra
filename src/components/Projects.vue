@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { projects } from "@/data/about.yaml";
+import { projects } from "@/data/user.yaml";
 export default {
     data() {
         return {

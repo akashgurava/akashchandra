@@ -1,26 +1,19 @@
 <template>
     <div class="w-40">
-        <g-link class=" logo text-3xl" to="/"> {{ details.logo_name }} </g-link>
+        <g-link class="text-3xl lowercase font-bold" :style="{'font-family': font}" to="/"> {{ logo_name }} </g-link>
     </div>
 </template>
 
 <script>
-import { details } from "@/data/about.yaml";
+import { details } from "@/data/user.yaml";
+import { fonts } from "@/data/site.yaml";
 
 export default {
     data() {
         return {
-            details
+            logo_name: details.logo_name,
+            font: fonts.logo
         }
     }
 }
 </script>
-
-<style scoped>
-@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
-
-.logo {
-    font-family: "Karla";
-    border-bottom-width: 0px;
-}
-</style>
