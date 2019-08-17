@@ -5,10 +5,7 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
-      "**/.vscode/**",
-      "**/blog/**",
-      "**/static/**",
-      "**/src/**"
+      "**/.vscode/**"
     ]
   }
 }
