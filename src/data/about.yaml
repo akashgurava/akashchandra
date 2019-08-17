@@ -1,0 +1,28 @@
+details:
+    name: "Akash Chandra Gurava"
+    logo_name: "akashchandra"
+social:
+    linkedin:
+        fas_name: "linkedin"
+        link: "https://www.linkedin.com/in/akashchandrag/"
+    github:
+        fas_name: "github"
+        link: "https://github.com/akashgurava"
+    facebook:
+        fas_name: "facebook"
+        link: "https://www.facebook.com/akashgurava"
+    twitter:
+        fas_name: "twitter"
+        link: "https://twitter.com/akashgurava"
+projects:
+    slug1:
+        title: "Yellow"
+        start: "Aug-2019"
+        end: "Sept-2019"
+        description: "lorem"
+    slug2:
+        title: "Blue"
+        start: "Aug-2019"
+        end: "Sept-2019"
+        description: "Ipsum"
+
