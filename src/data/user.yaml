@@ -20,8 +20,16 @@ projects:
         start: "Aug-2019"
         end: "Sept-2019"
         description: "lorem"
+        skills: Python,AWS
     slug2:
         title: "Blue"
         start: "Aug-2019"
         end: "Sept-2019"
         description: "Ipsum"
+        skills:
+            python:
+                name: Python
+                icon: https://cdn.svgporn.com/logos/python.svg
+            aws:
+                name: AWS
+                icon: /assets/icons/aws.svg
