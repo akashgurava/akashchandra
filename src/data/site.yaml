@@ -1,6 +1,7 @@
 fonts:
     logo: "Karla"
     menu: "Karla"
+    hero: "Karla"
 menu:
     home:
         name: Home
