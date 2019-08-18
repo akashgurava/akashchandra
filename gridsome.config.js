@@ -8,17 +8,15 @@ module.exports = {
     siteName: "Akash's Blog",
     siteDescription: 'A personal weblog about my projects.',
     siteUrl: 'https://akashchandra.netlify.com',
-    plugins: [
-        {
-            use: 'gridsome-plugin-tailwindcss',
-            options: {
-                tailwindConfig: 'tailwind.config.js',
-                purgeConfig: 'purgecss.config.js',
-                presetEnvConfig: {},
-                shouldPurge: true,
-                shouldImport: true,
-                shouldTimeTravel: true,
-            }
+    plugins: [{
+        use: 'gridsome-plugin-tailwindcss',
+        options: {
+            tailwindConfig: 'tailwind.config.js',
+            purgeConfig: 'purgecss.config.js',
+            presetEnvConfig: {},
+            shouldPurge: true,
+            shouldImport: true,
+            shouldTimeTravel: true,
         }
-    ]
+    }]
 }
