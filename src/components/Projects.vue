@@ -1,22 +1,14 @@
 <template>
 
-    <div class="overflow-x-hidden">
-        <div class="projects container-inner mx-auto text-xl py-16 relative">
+    <div class="container overflow-x-hidden w-screen">
+        <div class="projects text-xl">
 
-            <h2 class="font-bold mb-6" id="projects">Here are some projects I've worked on:</h2>
+            <h2 class="font-bold mb-2 text-center" id="projects">Projects</h2>
+            <div class="mb-2 text-center">Here are some projects I've worked on:</div>
 
-            <!-- Projects list -->
-            <ul>
-                <li class="checkmark mb-6" v-for="project in projects" :key="project.id">
-                    <div>{{ project.title }}</div>
-                    <div class="text-sm flex-row flex items-center">
-                        <div class=" mr-2">Skills: </div>
-                        <div class=" flex-row flex items-center mr-2" v-for="skill in project.skills" :key="skill.id">
-                            <!-- TODO: make height and width customizable -->
-                            <img class="h-5 w-5 mr-1" :src="skill.icon" :alt="skill.name.toLowerCase()">{{skill.name}}
-                        </div>
-                    </div>
-                    <div class="text-lg text-gray-600"> {{ project.description }} </div>
+            <ul class="flex flex-wrap justify-center">
+                <li class="w-11/12 lg:max-w-sm lg:px-4 lg:m-2 py-2 mx-auto" v-for="project in projects" :key="project.id">
+                    <Project :project="project"/>
                 </li>
             </ul>
 
@@ -28,8 +20,9 @@
 <script>
 import { resolve } from "path";
 import { projects } from "@/data/user.yaml";
+import Project from "@/components/Project";
 
-Object.keys(projects).forEach(project_name =>{
+Object.keys(projects).forEach(project_name => {
     var project = projects[project_name]
     var skills = project.skills
 
@@ -55,6 +48,9 @@ export default {
         return {
             projects
         }
+    },
+    components: {
+        Project
     }
 }
 </script>

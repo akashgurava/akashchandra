@@ -33,3 +33,40 @@ projects:
             aws:
                 name: AWS
                 icon: /assets/icons/aws.svg
+    slug3:
+        title: "Red"
+        start: "Aug-2019"
+        end: "Sept-2019"
+        description: "Completed 20 works in 500 works"
+        skills:
+            python:
+                name: Python
+                icon: https://cdn.svgporn.com/logos/python.svg
+            aws:
+                name: AWS
+                icon: /assets/icons/aws.svg
+    slug4:
+        title: "Red"
+        start: "Aug-2019"
+        end: "Sept-2019"
+        description: "Ipsum"
+        skills:
+            python:
+                name: Python
+                icon: https://cdn.svgporn.com/logos/python.svg
+            aws:
+                name: AWS
+                icon: /assets/icons/aws.svg
+    slug5:
+        title: "Red"
+        start: "Aug-2019"
+        end: "Sept-2019"
+        description: "Ipsum"
+        skills:
+            python:
+                name: Python
+                icon: https://cdn.svgporn.com/logos/python.svg
+            aws:
+                name: AWS
+                icon: /assets/icons/aws.svg
+
