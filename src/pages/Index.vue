@@ -1,20 +1,4 @@
 <template>
-    <Layout>
-
-        <Projects />
-
-    </Layout>
+  <Layout>
+  </Layout>
 </template>
-
-<script>
-import Projects from '~/components/Projects.vue'
-
-export default {
-    components: {
-        Projects
-    },
-    metaInfo: {
-        title: "Home",
-    },
-}
-</script>

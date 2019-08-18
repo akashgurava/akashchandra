@@ -1,11 +1,11 @@
 <template>
     <!-- Top menu -->
-    <header class="border-t-14 border-green-700">
-        <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
+    <header>
+        <nav class="px-8 lg:px-16 container mx-auto flex flex-wrap justify-between items-center py-2">
 
             <!-- Logo -->
             <div class="w-40">
-                <g-link class="text-3xl lowercase font-bold" :style="{'font-family': fonts.logo, 'border-bottom-width': '0px'}" to="/"> {{ logo_name }} </g-link>
+                <g-link class="text-3xl lowercase font-bold" :style="{'font-family': fonts.logo}" to="/"> {{ logo_name }} </g-link>
             </div>
 
             <!-- Hambuger menu button for small screens -->
@@ -18,20 +18,10 @@
             </div>
 
             <!-- Right side Menu -->
-            <ul class="uppercase font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0" :class="isOpen ? 'block': 'hidden'">
-                <!-- Search bar -->
-                <li class="mr-8 mb-6 lg:mb-0">
-                    <search-input />
-                </li>
-
-                <!-- Theme Switcher -->
-                <li class="mr-8 mb-6 lg:mb-0">
-                    <theme-switcher :theme="theme" @themeChanged="updateTheme" />
-                </li>
-
+            <ul class="w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0" :class="isOpen ? 'block': 'hidden'">
                 <!-- Menu items -->
-                <li v-for="item in menu" v-bind:key="item.key" class="mr-8 mb-6 lg:mb-0">
-                    <g-link :style="{'font-family': fonts.menu}" :to="item.link"> {{ item.name }} </g-link>
+                <li v-for="item in menu" v-bind:key="item.key" class="mx-2 mb-2 lg:mb-0">
+                    <g-link class="uppercase font-bold" :style="{'font-family': fonts.menu}" :to="item.link"> {{ item.name }} </g-link>
                 </li>
             </ul>
 
@@ -40,32 +30,21 @@
 </template>
 
 <script>
-import SearchInput from "@/components/SearchInput"
-import ThemeSwitcher from "@/components/ThemeSwitcher"
 import { details } from "@/data/user.yaml";
 import { fonts, menu } from "@/data/site.yaml";
 
 export default {
-    components: {
-        SearchInput,
-        ThemeSwitcher
-    },
     data() {
         return {
             menu: menu,
             fonts: fonts,
             logo_name: details.logo_name,
-            theme: "",
             isOpen: false,
         }
     },
     methods: {
         toggle() {
             this.isOpen = !this.isOpen
-        },
-        updateTheme(theme) {
-            this.theme = theme
-            this.$emit('themeChanged', theme)
         },
     },
 }
