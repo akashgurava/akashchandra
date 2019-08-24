@@ -1,5 +1,5 @@
 <template>
-    <div class="content-wrapper bg-gray-100 font-sans text-copy-primary leading-normal flex flex-col min-h-screen">
+    <div class="content-wrapper bg-gray-100 min-h-screen">
 
         <!-- Show the Top menu only if the current path is not homepage -->
         <v-header />

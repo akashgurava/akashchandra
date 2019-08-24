@@ -1,5 +1,15 @@
-@tailwind base;
+.content-wrapper {
+    transition: background-color .25s;
+}
 
-@tailwind components;
+.hero {
+    height: calc(100vh - 61px);
+}
 
-@tailwind utilities;
+@screen lg {
+
+    .hero {
+        height: calc(100vh - 77px);
+    }
+
+}
