@@ -1,3 +1,6 @@
+body {
+    font-family: Karla;
+}
 .content-wrapper {
     transition: background-color .25s;
 }
@@ -6,10 +9,20 @@
     height: calc(100vh - 61px);
 }
 
+.card {
+    border-radius: 1rem;
+    background-color: #222222;
+}
+
 @screen lg {
 
     .hero {
         height: calc(100vh - 77px);
     }
 
+    .card {
+        height: 24rem;
+    }
+
 }
+
