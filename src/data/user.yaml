@@ -1,8 +1,16 @@
 details:
     name: "Akash Chandra Gurava"
     position: "Senior Analyst"
+    subtitle: "Data Analyst 📈, Hacker 👨🏻‍💻"
     intro: "Hey there! 👋 I'm Akash Chandra Gurava. I'm a Senior Analyst."
     logo_name: "akash"
+    about: "By profession I'm Senior Data Analyst at Accenture. But my interests span a multitude of areas accross IT and Applications of IT in Finance. I have proficiency in Machine Learning, Personal Investment and Financial Engineering.
+
+    Nowadays I'm curious about Front-end development and Multi-Platform Application development.
+
+    I believe in clean coding and slick design. Building astonishing apps is my passion. Users demand cool products to use instead of sloppy ones, so I work with that purpose.
+    "
+
 social:
     linkedin:
         fas_name: "linkedin"
@@ -16,6 +24,7 @@ social:
     twitter:
         fas_name: "twitter"
         link: "https://twitter.com/akashgurava"
+
 projects:
     slug1:
         title: "Yellow"

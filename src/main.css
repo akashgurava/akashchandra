@@ -5,7 +5,12 @@ body {
     transition: background-color .25s;
 }
 
-.hero {
+.hero-full {
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero-full-with-navbar {
     height: calc(100vh - 61px);
 }
 
@@ -16,7 +21,7 @@ body {
 
 @screen lg {
 
-    .hero {
+    .hero-full-with-navbar {
         height: calc(100vh - 77px);
     }
 

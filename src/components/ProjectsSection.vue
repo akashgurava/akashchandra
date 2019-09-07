@@ -1,5 +1,5 @@
 <template name=projects-section>
-    <section class="py-8 flex justify-center items-center min-h-screen" id=projects>
+    <section class="py-8 flex justify-center items-center hero-full" id=projects>
 
         <div class="container overflow-x-hidden w-screen">
             <div class="projects text-xl">
@@ -8,7 +8,7 @@
                 <div class="w-11/12 mx-auto my-2 text-center">Here are some projects I've worked on:</div>
 
                 <ul class="flex flex-wrap justify-center">
-                    <li class="w-11/12 lg:max-w-sm lg:px-4 lg:m-2 py-2 mx-auto" v-for="project in projects" :key="project.id">
+                    <li class="w-10/12 lg:max-w-sm lg:px-4 lg:m-2 py-2 mx-auto" v-for="project in projects" :key="project.id">
                         <Project :project="project" />
                     </li>
                 </ul>

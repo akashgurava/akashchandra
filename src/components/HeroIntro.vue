@@ -1,5 +1,5 @@
 <template name=hero-intro>
-    <section class="flex justify-center items-center hero">
+    <section class="flex justify-center items-center hero-full-with-navbar">
 
         <div class="text-center" :style="{'font-family': font}">
             <h1 class="text-2xl lg:text-3xl font-bold">{{ name }}</h1>
