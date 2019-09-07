@@ -7,7 +7,7 @@
 module.exports = {
     siteName: "Akash's Blog",
     siteDescription: 'A personal weblog about my projects.',
-    siteUrl: 'https://akashchandra.netlify.com',
+    siteUrl: 'https://akashchandra.me',
     plugins: [{
         use: 'gridsome-plugin-tailwindcss',
         options: {
