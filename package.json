@@ -1,7 +1,8 @@
 {
   "name": "akashchandra",
+  "private": true,
   "version": "0.1.0",
-  "description": "A gorgeous blog/portfolio static website about Fintech, Data Science.",
+  "description": "A personal website about me where I Blog about the projects I work on and things I find interesting.",
   "repository": {
     "type": "git",
     "url": "https://github.com/akashgurava/akashchandra.git"
@@ -17,5 +18,22 @@
   "bugs": {
     "url": "https://github.com/akashgurava/akashchandra/issues"
   },
-  "homepage": "https://github.com/akashgurava/akashchandra"
+  "homepage": "https://github.com/akashgurava/akashchandra",
+  "scripts": {
+    "build": "NODE_ENV=production gridsome build",
+    "build-dev": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/vue-fontawesome": "^0.1.7",
+    "es6-promise": "^4.2.8",
+    "gridsome": "^0.6.9",
+    "gridsome-plugin-tailwindcss": "^2.2.23",
+    "tailwindcss": "^1.1.2",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {}
 }

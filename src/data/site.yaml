@@ -1,0 +1,11 @@
+fonts:
+    logo: "Karla"
+    menu: "Karla"
+    hero: "Karla"
+menu:
+    home:
+        name: Home
+        link: "/"
+    resume:
+        name: Resume
+        link: "/resume"

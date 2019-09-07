@@ -1,0 +1,33 @@
+body {
+    font-family: Karla;
+}
+.content-wrapper {
+    transition: background-color .25s;
+}
+
+.hero-full {
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero-full-with-navbar {
+    height: calc(100vh - 61px);
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: #222222;
+}
+
+@screen lg {
+
+    .hero-full-with-navbar {
+        height: calc(100vh - 77px);
+    }
+
+    .card {
+        height: 24rem;
+    }
+
+}
+

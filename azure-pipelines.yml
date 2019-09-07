@@ -1,4 +1,4 @@
-# A Pure Build pipeline to test if everything works or not
+# Build pipeline to deploy to firebase
 pool:
   vmImage: ubuntu-16.04
   demands:
@@ -17,7 +17,23 @@ steps:
     inputs:
       versionSpec: 12.x
 
+  - task: CmdLine@2
+    displayName: "Install firbase and gridsome globally"
+    inputs:
+      script: 'npm i -g gridsome firebase-tools'
+
   - task: Npm@1
-    displayName: "npm install"
+    displayName: "Install project dependencies"
     inputs:
       verbose: false
+
+  - task: CmdLine@2
+    displayName: "Build the website"
+    inputs:
+      script: 'npm run build'
+
+  - task: CmdLine@2
+    displayName: "Deploy the website"
+    inputs:
+      script:
+        firebase deploy --token "$(FIREBASE_TOKEN)"
