@@ -2,7 +2,7 @@
   "name": "akashchandra",
   "private": true,
   "version": "0.1.0",
-  "description": "A gorgeous blog/portfolio static website about Fintech, Data Science.",
+  "description": "A personal website about me where I Blog about the projects I work on and things I find interesting.",
   "repository": {
     "type": "git",
     "url": "https://github.com/akashgurava/akashchandra.git"
