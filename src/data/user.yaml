@@ -22,7 +22,7 @@ projects:
         start: "Aug-2019"
         end: "Sept-2019"
         description: "lorem"
-        skills: Python,AWS
+        skills: Python,AWS,Python,AWS,Python
     slug2:
         title: "Blue"
         start: "Aug-2019"

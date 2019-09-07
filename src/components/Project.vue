@@ -1,13 +1,18 @@
 <template name=v-project>
     <div class="card w-full rounded overflow-hidden shadow-lg my-1">
         <div class="px-6 py-4">
+            <!-- Title -->
             <div class="text-gray-200 font-bold text-xl mb-2">{{ project.title }}</div>
+
+            <!-- Skills -->
             <div class="pb-4">
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" v-for="skill in skills" :key="skill.id">
-                    <img class="h-5 w-5" :src="skill.icon" :alt="skill.name.toLowerCase()">
-                    <p>{{skill.name}}</p>
+                    <img class="h-5 w-5 float-left" :src="skill.icon" :alt="skill.name.toLowerCase()">
+                    <p class="float-left pl-2">{{skill.name}}</p>
                 </span>
             </div>
+
+            <!-- Description -->
             <p class="text-gray-200 text-base break-words whitespace-normal">
                 {{ project.description }}
             </p>

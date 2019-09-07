@@ -1,4 +1,4 @@
-<template>
+<template name=v-header>
     <!-- Top menu -->
     <header>
         <nav class="px-8 py-2 lg:py-4 container mx-auto flex flex-wrap justify-between items-center">
