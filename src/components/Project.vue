@@ -47,7 +47,7 @@ export default {
                         var skill_obj = Object()
                         skill_obj['name'] = skill
                         if (process.env.NODE_ENV === "production") {
-                            skill_obj['icon'] = this.$static.metaData.siteUrl + skill.toLowerCase() + '.svg'
+                            skill_obj['icon'] = this.$static.metaData.siteUrl + "/assets/icons/" + skill.toLowerCase() + '.svg'
                         } else {
                             skill_obj['icon'] = resolve('../../assets/icons/' + skill.toLowerCase() + '.svg')
                         }
@@ -59,7 +59,7 @@ export default {
                         skill_obj['name'] = skill.name
                         if (skill.icon === undefined) {
                             if (process.env.NODE_ENV === "production") {
-                                skill_obj['icon'] = this.$static.metaData.siteUrl + skill.toLowerCase() + '.svg'
+                                skill_obj['icon'] = this.$static.metaData.siteUrl + "/assets/icons/" + skill.toLowerCase() + '.svg'
                             } else {
                                 skill_obj['icon'] = resolve('../../assets/icons/' + skill.toLowerCase() + '.svg')
                             }
