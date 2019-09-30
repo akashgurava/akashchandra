@@ -30,7 +30,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.10.2",
     "@fortawesome/vue-fontawesome": "^0.1.7",
     "es6-promise": "^4.2.8",
-    "gridsome": "^0.6.9",
+    "gridsome": "^0.7.6",
     "gridsome-plugin-tailwindcss": "^2.2.23",
     "tailwindcss": "^1.1.2",
     "vuex": "^3.1.1"
