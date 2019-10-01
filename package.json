@@ -20,20 +20,26 @@
   },
   "homepage": "https://github.com/akashgurava/akashchandra",
   "scripts": {
-    "build": "NODE_ENV=production gridsome build",
-    "build-dev": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "dev": "nuxt",
+    "build": "NODE_ENV=production nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.22",
-    "@fortawesome/free-brands-svg-icons": "^5.10.2",
-    "@fortawesome/vue-fontawesome": "^0.1.7",
-    "es6-promise": "^4.2.8",
-    "gridsome": "^0.6.9",
-    "gridsome-plugin-tailwindcss": "^2.2.23",
-    "tailwindcss": "^1.1.2",
-    "vuex": "^3.1.1"
+    "js-yaml-loader": "^1.2.2",
+    "nuxt": "^2.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
 }
