@@ -21,7 +21,7 @@
   "homepage": "https://github.com/akashgurava/akashchandra",
   "scripts": {
     "dev": "nuxt",
-    "build": "NODE_ENV=production nuxt build",
+    "build": "NODE_ENV=production nuxt generate",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
