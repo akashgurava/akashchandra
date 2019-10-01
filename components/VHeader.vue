@@ -6,13 +6,13 @@
     >
       <!-- Logo -->
       <div class="w-40">
-        <nuxt-link
+        <n-link
           class="text-3xl lowercase font-bold"
           :style="{ 'font-family': fonts.logo }"
           to="/"
         >
           {{ logo_name }}
-        </nuxt-link>
+        </n-link>
       </div>
 
       <!-- Hambuger menu button for small screens -->
@@ -38,13 +38,13 @@
       >
         <!-- Menu items -->
         <li v-for="item in menu" :key="item.key" class="mx-2 mb-2 lg:mb-0">
-          <nuxt-link
+          <n-link
             class="uppercase font-bold"
             :style="{ 'font-family': fonts.menu }"
             :to="item.link"
           >
             {{ item.name }}
-          </nuxt-link>
+          </n-link>
         </li>
       </ul>
     </nav>

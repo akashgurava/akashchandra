@@ -18,9 +18,9 @@ steps:
       versionSpec: 12.x
 
   - task: CmdLine@2
-    displayName: "Install firbase and gridsome globally"
+    displayName: "Install firbase globally"
     inputs:
-      script: 'npm i -g gridsome firebase-tools'
+      script: 'npm i -g firebase-tools'
 
   - task: Npm@1
     displayName: "Install project dependencies"
