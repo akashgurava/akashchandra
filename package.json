@@ -40,6 +40,6 @@
     "eslint-loader": "^3.0.2",
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.16.4"
+    "prettier": "^2.1.2"
   }
 }
